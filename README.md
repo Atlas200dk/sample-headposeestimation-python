@@ -17,11 +17,11 @@
 
 1.  <a name="zh-cn_topic_0220049620_li953280133816"></a>获取源码包。
 
-    将[https://gitee.com/Atlas200DK/sample-headposeestimation-python](https://gitee.com/Atlas200DK/sample-headposeestimation-python)仓中的代码以Mind Studio安装用户下载至Mind Studio所在Ubuntu服务器的任意目录，例如代码存放路径为：/home/ascend/sample-headposeestimation-python。
+    将[https://gitee.com/Atlas200DK/sample-headposeestimation-python](https://gitee.com/Atlas200DK/sample-headposeestimation-python)仓中的代码以Mind Studio安装用户下载至Mind Studio所在Ubuntu服务器的任意目录，例如代码存放路径为：$HOME/sample-headposeestimation-python。
 
 2.  <a name="zh-cn_topic_0220049620_li12291771229"></a>获取此应用中所需要的网络模型。
 
-    参考[表 头部姿势识别\(python\)使用模型](#zh-cn_topic_0220049620_table1119094515272)获取此应用中所用到的原始网络模型及其对应的权重文件，并将其存放到Mind Studio所在Ubuntu服务器的任意目录，例如$HOME/ascend/models/headposeestimation-python。
+    参考[表 头部姿势识别\(python\)使用模型](#zh-cn_topic_0220049620_table1119094515272)获取此应用中所用到的原始网络模型及其对应的权重文件，并将其存放到Mind Studio所在Ubuntu服务器的任意目录，例如：$HOME/ascend/models/headposeestimation-python。
 
     **表 1**  头部姿势识别\(python\)使用模型
 
@@ -79,7 +79,7 @@
 
     1.  1.3.0.0版本执行如下命令在最后一行添加DDK\_HOME及LD\_LIBRARY\_PATH的环境变量。
 
-        **export DDK\_HOME=/home/XXX/tools/che/ddk/ddk**
+        **export DDK\_HOME=$HOME/tools/che/ddk/ddk**
 
         **export LD\_LIBRARY\_PATH=$DDK\_HOME/uihost/lib**
 
@@ -87,14 +87,13 @@
 
         **export tools\_version=_1.31.X.X_**
 
-        **export DDK\_HOME=$HOME/.mindstudio/huawei/ddk/$tools\_version/ddk**
+        **export DDK\_HOME=\\$HOME/.mindstudio/huawei/ddk/\\$tools\_version/ddk**
 
         **export NPU\_DEVICE\_LIB=$DDK\_HOME/../RC/host-aarch64\_Ubuntu16.04.3/lib**
 
-        **export LD\_LIBRARY\_PATH=$DDK\_HOME/lib/x86\_64-linux-gcc5.4**
+        **export LD\_LIBRARY\_PATH=\\$DDK\_HOME/lib/x86\_64-linux-gcc5.4:\\$DDK\_HOME/uihost/lib**
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >-   1.3.0.0版本环境变量设置时的XXX为Mind Studio安装用户，/home/XXX/tools为DDK默认安装路径。  
+    >![](public_sys-resources/icon-note.gif) **说明：**    
     >-   1.31.0.0及以上版本环境变量设置时1.31.X.X为DDK版本号，可以通过安装的DDK的包名获取，如DDK包的包名为Ascend\_DDK-1.31.T15.B150-1.1.1-x86\_64.ubuntu16.04.tar.gz，则此DDK的版本号为1.31.T15.B150。  
     >-   如果此环境变量已经添加，则此步骤可跳过。  
 
@@ -203,7 +202,7 @@
 
 ## 部署<a name="zh-cn_topic_0220049620_section1872516528910"></a>
 
-1.  以Mind Studio安装用户进入headposeestimation-python应用代码所在根目录，如/home/ascend/sample-headposeestimation-python。
+1.  以Mind Studio安装用户进入headposeestimation-python应用代码所在根目录，如：$HOME/sample-headposeestimation-python。
 2.  <a name="zh-cn_topic_0220049620_li9634105881418"></a>执行部署脚本，进行工程环境准备，Presenter Server服务器的配置等操作，其中Presenter Server用于接收Application发送过来的数据并通过浏览器进行结果展示。
 
     **bash deploy.sh** _host\_ip_
