@@ -56,8 +56,8 @@
     1.  在Mind Studio操作界面的顶部菜单栏中选择“Tool \> Convert Model”，进入模型转换界面。
     2.  在弹出的**Convert Model**操作界面中，Model File与Weight File分别选择[步骤2](#zh-cn_topic_0220049620_li12291771229)中下载的模型文件和权重文件。
         -   **Model Name**填写为[表 检测网络应用\(python\)使用模型](#zh-cn_topic_0220049620_table1119094515272)对应的**模型名称**。
-        -   face\_detection和head\_pose\_estimation模型都需要在AIPP配置界面将**Input Image Format**修改为RGB888\_U8。
-        -   **Model Image Format**关闭其他保持默认值。
+        -   face\_detection和head\_pose\_estimation模型都需要在AIPP配置界面将**Input Image Format**修改为RGB888\_U8，**Model Image Format**关闭。
+        -   其他保持默认值。
         -   face\_detection模型在转换时会失败，报错如[图 face\_detection模型转换失败](#zh-cn_topic_0220049620_fig149226521166)所示。
 
             **图 1**  face\_detection模型转换失败<a name="zh-cn_topic_0220049620_fig149226521166"></a>  
