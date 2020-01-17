@@ -219,7 +219,7 @@
 
 3.  <a name="zh-cn_topic_0220049620_li156931456596"></a>启动Presenter Server。
 
-    执行如下命令在后台启动Face Detection应用的Presenter Server主程序。
+    执行如下命令在后台启动Head Poseestimation应用的Presenter Server主程序。
 
     **bash start\_presenterserver.sh**
 
