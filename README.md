@@ -272,7 +272,7 @@
 
     **python main.py** _channel_
 
-    -   _channel: _输入的视频文件名或者RTSP流地址
+    -   channel: 输入的视频文件名或者RTSP流地址
 
     视频文件运行的命令示例如下所示：
 
