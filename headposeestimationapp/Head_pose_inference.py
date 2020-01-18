@@ -18,7 +18,7 @@ import time
 class HeadposeInference(object):
     def __init__(self):
         self.graph_id = 1001
-        self.model_engine_id = 101
+        self.model_engine_id = 100
         # 一组保存三个角度值->一组保存当前的头部姿势
         self.resultList = []
         # 保存着人脸关键点坐标,一组为136个float型数据
