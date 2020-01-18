@@ -14,9 +14,7 @@ from presenter_types import *
 import ChannelManager
 import time
 
-'''
-人脸检测模型不需要对齐，输入300x300,图像输入必须处理成numpy格式
-'''
+
 class HeadposeInference(object):
     def __init__(self):
         self.graph_id = 1001
