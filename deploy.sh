@@ -28,9 +28,7 @@ main()
 
     face_detection_model_name=$(basename `grep face_detection_model_path ${app_path}/ConstManager.py | sed "s/'//g" | awk -F '[= ]+' '{print $2}'`)
     head_pose_model_name=$(basename `grep head_pose_model_path ${app_path}/ConstManager.py | sed "s/'//g" | awk -F '[= ]+' '{print $2}'`)
-    # echo "face_detection_model_name = ${face_detection_model_name}"
-    # echo "head_pose_model_name = ${head_pose_model_name}"
-
+    
     echo "start deploying  ${face_detection_model_name} "
     if [[ `find ${project_path}/model -name "${face_detection_model_name}"`"X" == "X" ]];then
         echo "please input ${face_detection_model_name} into ${project_path}/model/ "
