@@ -1,8 +1,5 @@
 # encoding=utf-8
 
-# from…import *语句与import区别在于：
-# import 导入模块，每次使用模块中的函数都要是定是哪个模块。
-# from…import * 导入模块，每次使用模块中的函数，直接使用函数就可以了；注因为已经知道该函数是那个模块中的了。
 
 from  ConstManager import *
 import ModelManager
