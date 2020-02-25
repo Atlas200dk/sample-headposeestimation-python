@@ -5,7 +5,6 @@ import cv2
 
 import face_inference
 import Head_pose_inference
-from graph import *
 
 import client
 import threading
