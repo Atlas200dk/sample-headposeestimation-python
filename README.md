@@ -52,7 +52,7 @@
 
         如[图 开发板interface文件配置](#zh-cn_topic_0220049620_fig151021334153812)所示，输入:wq!保存退出。
 
-        **图 2**  开发板interface文件配置<a name="zh-cn_topic_0220049620_fig151021334153812"></a>  
+        **图 1**  开发板interface文件配置<a name="zh-cn_topic_0220049620_fig151021334153812"></a>  
         ![](figures/开发板interface文件配置.png "开发板interface文件配置")
 
     3.  执行以下命令重启开发板，使配置生效。
@@ -65,7 +65,7 @@
 
         **ifup eth0**
 
-        **图 3**  开发板联网配置成功<a name="zh-cn_topic_0220049620_fig4366141165015"></a>  
+        **图 2**  开发板联网配置成功<a name="zh-cn_topic_0220049620_fig4366141165015"></a>  
         ![](figures/开发板联网配置成功.png "开发板联网配置成功")
 
 2.  安装环境依赖。
@@ -107,7 +107,7 @@
 
         安装后如[图 hiai安装成功验证](#zh-cn_topic_0220049620_fig89761216122414)所示，则为安装成功。
 
-        **图 4**  hiai安装成功验证<a name="zh-cn_topic_0220049620_fig89761216122414"></a>  
+        **图 3**  hiai安装成功验证<a name="zh-cn_topic_0220049620_fig89761216122414"></a>  
         ![](figures/hiai安装成功验证.png "hiai安装成功验证")
 
 3.  安装opencv。
@@ -120,7 +120,7 @@
 
     安装后如[图 opencv安装成功验证](#zh-cn_topic_0220049620_fig1478418313328)所示，则为安装成功。
 
-    **图 5**  opencv安装成功验证<a name="zh-cn_topic_0220049620_fig1478418313328"></a>  
+    **图 4**  opencv安装成功验证<a name="zh-cn_topic_0220049620_fig1478418313328"></a>  
     ![](figures/opencv安装成功验证.png "opencv安装成功验证")
 
 
@@ -152,17 +152,17 @@
 
     如[图 Presenter Server进程启动](#zh-cn_topic_0220049620_fig69531305324)所示，表示presenter\_server的服务启动成功。
 
-    **图 6**  Presenter Server进程启动<a name="zh-cn_topic_0220049620_fig69531305324"></a>  
+    **图 5**  Presenter Server进程启动<a name="zh-cn_topic_0220049620_fig69531305324"></a>  
     ![](figures/Presenter-Server进程启动.png "Presenter-Server进程启动")
 
     使用上图提示的URL登录Presenter Server，仅支持Chrome浏览器。IP地址为[步骤2](#zh-cn_topic_0220049620_li9634105881418)中输入的IP地址，端口号默为7007，如下图所示，表示Presenter Server启动成功。
 
-    **图 7**  主页显示<a name="zh-cn_topic_0220049620_fig64391558352"></a>  
+    **图 6**  主页显示<a name="zh-cn_topic_0220049620_fig64391558352"></a>  
     ![](figures/主页显示.png "主页显示")
 
     Presenter Server、Mind Studio与Atlas 200 DK之间通信使用的IP地址示例如下图所示：
 
-    **图 8**  IP地址示例<a name="zh-cn_topic_0220049620_fig1881532172010"></a>  
+    **图 7**  IP地址示例<a name="zh-cn_topic_0220049620_fig1881532172010"></a>  
     ![](figures/IP地址示例.png "IP地址示例")
 
     其中：
@@ -213,7 +213,7 @@
 
     等待Presenter Agent传输数据给服务端，单击“Refresh“刷新，当有数据时相应的Channel 的Status变成绿色，如[图 Presenter Server界面](#zh-cn_topic_0220049620_fig113691556202312)所示。
 
-    **图 9**  Presenter Server界面<a name="zh-cn_topic_0220049620_fig113691556202312"></a>  
+    **图 8**  Presenter Server界面<a name="zh-cn_topic_0220049620_fig113691556202312"></a>  
     ![](figures/Presenter-Server界面.png "Presenter-Server界面")
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
