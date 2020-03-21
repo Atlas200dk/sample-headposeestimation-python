@@ -1,3 +1,5 @@
+中文|[English](Readme_EN.md)
+
 # 头部姿势估计（Python）<a name="ZH-CN_TOPIC_0228752402"></a>
 
 开发者将本应用部署至Atlas 200 DK或者AI加速云服务器上实现对本地mp4文件或者RTSP视频流进行解码，对视频帧中的人脸图像进行头部姿势估计，并将预测的结果信息发送至Presenter Server端进行展示。
