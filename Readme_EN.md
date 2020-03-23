@@ -23,7 +23,7 @@ You can use either of the following methods:
     >-   The quick deployment script can be used to quickly deploy multiple cases. Select  **sample-headposeestimation-python**.  
     >-   The quick deployment script automatically completes code download, model conversion, and environment variable configuration. To learn about the detailed deployment process, select the common deployment mode. Go to  **[2. Common deployment](#li3208251440)**.  
 
-2.  <a name="li3208251440"></a>Common deployment: visit  [https://gitee.com/Atlas200DK/sample-READEME/tree/master/sample-headposeestimation-python](https://gitee.com/Atlas200DK/sample-READEME/tree/master/sample-headposeestimation-python).
+2.  <a name="li3208251440"></a>Common deployment: visit  [https://gitee.com/Atlas200DK/sample-README/tree/master/sample-headposeestimation-python](https://gitee.com/Atlas200DK/sample-README/tree/master/sample-headposeestimation-python).
 
     >![](public_sys-resources/icon-note.gif) **NOTE:**   
     >-   In this deployment mode, you need to manually download code, convert models, and configure environment variables. After that, you will have a better understanding of the process.  
@@ -35,11 +35,11 @@ Note: If the HiAI library, OpenCV library, and related dependencies have been in
 
 1.  Configure the network connection of the developer board.
 
-    Configure the network connection of the Atlas DK developer board by referring to  [https://gitee.com/Atlas200DK/sample-READEME/tree/master/DK\_NetworkConnect](https://gitee.com/Atlas200DK/sample-READEME/tree/master/DK_NetworkConnect).
+    Configure the network connection of the Atlas DK developer board by referring to  [https://gitee.com/Atlas200DK/sample-README/tree/master/DK\_NetworkConnect](https://gitee.com/Atlas200DK/sample-README/tree/master/DK_NetworkConnect).
 
 2.  Install the environment dependency .
 
-    Configure the environment dependency by referring to  [https://gitee.com/Atlas200DK/sample-READEME/tree/master/DK\_Environment](https://gitee.com/Atlas200DK/sample-READEME/tree/master/DK_Environment).
+    Configure the environment dependency by referring to  [https://gitee.com/Atlas200DK/sample-README/tree/master/DK\_Environment](https://gitee.com/Atlas200DK/sample-README/tree/master/DK_Environment).
 
 
 ## Deployment<a name="en-us_topic_0220049620_section1872516528910"></a>
@@ -127,7 +127,7 @@ Note: If the HiAI library, OpenCV library, and related dependencies have been in
     >![](public_sys-resources/icon-note.gif) **NOTE:**   
     >You can press  **Ctrl**+**C**  to stop the application.  
 
-4.  Use the URL displayed upon the start of the Presenter Server service to log in to Presenter Server. For details, see  [Start Presenter Server](en-us_topic_0228757087.md#li156931456596).
+4.  Use the URL displayed upon the start of the Presenter Server service to log in to Presenter Server. 
 
     Wait for Presenter Agent to transmit data to the server. Click  **Refresh**. When there is data, the icon in the  **Status**  column for the corresponding channel changes to green, as shown in  [Figure 4](#en-us_topic_0228757087_fig113691556202312).
 
