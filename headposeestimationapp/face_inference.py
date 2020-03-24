@@ -67,7 +67,7 @@ class FaceInference(object):
         # 从原始图片中crop出的人脸(数据类型为numpy数组),保存到一个列表中self.nparray
         if resultList is not None:
             for i in range(200):
-                if (resultList[0][i][0][0][2] > 0.9 and resultList[0][i][0][0][2] < 1.0):
+                if (resultList[0][i][0][0][2] > 0.8 and resultList[0][i][0][0][2] <= 1.0):
                     if (resultList[0][i][0][0][3] < 0):
                         resultList[0][i][0][0][3] = 0
                     if (resultList[0][i][0][0][4] < 0):
