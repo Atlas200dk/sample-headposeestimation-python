@@ -1,19 +1,19 @@
 中文|[English](Readme.md)
 
-# 头部姿势估计（Python）<a name="ZH-CN_TOPIC_0228752402"></a>
+# 头部姿势估计（Python）<a name="ZH-CN_TOPIC_0232338511"></a>
 
-开发者将本应用部署至Atlas 200 DK或者AI加速云服务器上实现对本地mp4文件或者RTSP视频流进行解码，对视频帧中的人脸图像进行头部姿势估计，并将预测的结果信息发送至Presenter Server端进行展示(此版本适用于python2)。
+开发者将本应用部署至Atlas 200 DK或者AI加速云服务器上实现对本地mp4文件或者RTSP视频流进行解码，对视频帧中的人脸图像进行头部姿势估计，并将预测的结果信息发送至Presenter Server端进行展示。
 
 当前分支中的应用适配**1.3.0.0**与**1.32.0.0及以上**版本的[DDK&RunTime](https://ascend.huawei.com/resources)。
 
-## 前提条件<a name="zh-cn_topic_0220049620_section137245294533"></a>
+## 前提条件<a name="zh-cn_topic_0228752402_zh-cn_topic_0220049620_section137245294533"></a>
 
 部署此Sample前，需要准备好以下环境：
 
 -   已完成Mind Studio的安装。
 -   已完成Atlas 200 DK开发者板与Mind Studio的连接，交叉编译器的安装，SD卡的制作及基本信息的配置等。
 
-## 样例部署<a name="section412811285117"></a>
+## 样例部署<a name="zh-cn_topic_0228752402_section412811285117"></a>
 
 可以选择如下快速部署或者常规方法部署，二选一即可：
 
@@ -21,15 +21,15 @@
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
     >-   该快速部署脚本可以快速部署多个案例，请选择sample-headposeestimation-python案例部署即可。  
-    >-   该快速部署脚本自动完成了代码下载、模型转换、环境变量配置等流程，如果需要了解详细的部署过程请选择常规部署方式。转: **[2. 常规部署](#li3208251440)**  
+    >-   该快速部署脚本自动完成了代码下载、模型转换、环境变量配置等流程，如果需要了解详细的部署过程请选择常规部署方式。转：**[2. 常规部署](#zh-cn_topic_0228752402_li3208251440)**  
 
-2.  <a name="li3208251440"></a>常规部署，请参考：  [https://github.com/Atlas200dk/sample-README/tree/master/sample-headposeestimation-python](https://github.com/Atlas200dk/sample-README/tree/master/sample-headposeestimation-python)  。
+2.  <a name="zh-cn_topic_0228752402_li3208251440"></a>常规部署，请参考：  [https://github.com/Atlas200dk/sample-README/tree/master/sample-headposeestimation-python](https://github.com/Atlas200dk/sample-README/tree/master/sample-headposeestimation-python)  。
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
     >-   该部署方式，需要手动完成代码下载、模型转换、环境变量配置等过程。完成后，会对其中的过程更加了解。  
 
 
-## 环境配置<a name="section214020331856"></a>
+## 环境配置<a name="zh-cn_topic_0228752402_section214020331856"></a>
 
 **注：开发板上hiai库、opencv库、相关依赖已安装可跳过此步骤。**
 
@@ -37,15 +37,15 @@
 
     请参考[https://github.com/Atlas200dk/sample-README/tree/master/DK\_NetworkConnect](https://github.com/Atlas200dk/sample-README/tree/master/DK_NetworkConnect)  ，进行开发板网络连接配置。
 
-2.  安装环境依赖。
+2.  安装环境依赖。、
 
     请参考[https://github.com/Atlas200dk/sample-README/tree/master/DK\_Environment](https://github.com/Atlas200dk/sample-README/tree/master/DK_Environment)  ，进行环境依赖配置。
 
 
-## 部署<a name="zh-cn_topic_0220049620_section1872516528910"></a>
+## 部署<a name="zh-cn_topic_0228752402_zh-cn_topic_0220049620_section1872516528910"></a>
 
 1.  以Mind Studio安装用户进入headposeestimation-python应用代码所在根目录，如：$HOME/sample-headposeestimation-python。
-2.  <a name="zh-cn_topic_0228757086_li9634105881418"></a>执行部署脚本，进行工程环境准备，Presenter Server服务器的配置等操作，其中Presenter Server用于接收Application发送过来的数据并通过浏览器进行结果展示。
+2.  <a name="zh-cn_topic_0228752402_zh-cn_topic_0228757086_li9634105881418"></a>执行部署脚本，进行工程环境准备，Presenter Server服务器的配置等操作，其中Presenter Server用于接收Application发送过来的数据并通过浏览器进行结果展示。
 
     **bash deploy.sh** _host\_ip_
 
@@ -66,22 +66,23 @@
     **bash start\_presenterserver.sh**
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
-    >执行此脚本会先杀死后台的其他Presenter Server进程。后台无正在执行的进程会提示presenter server not in process；后台有正在执行的进程会提示presenter server stop success。  
+    >-   执行此脚本会先杀死后台的其他Presenter Server进程。后台无正在执行的进程会提示presenter server not in process；后台有正在执行的进程会提示presenter server stop success。  
+    >-   程序运行结束后可执行  **bash stop\_presenterserver.sh**  关闭presentserver。  
 
-    如[图 Presenter Server进程启动](#zh-cn_topic_0228757086_fig69531305324)所示，表示presenter\_server的服务启动成功。
+    如[图 Presenter Server进程启动](#zh-cn_topic_0228752402_zh-cn_topic_0228757086_fig69531305324)所示，表示presenter\_server的服务启动成功。
 
-    **图 1**  Presenter Server进程启动<a name="zh-cn_topic_0228757086_fig69531305324"></a>  
-    ![](figures/Presenter-Server进程启动-51.png "Presenter-Server进程启动-51")
+    **图 1**  Presenter Server进程启动<a name="zh-cn_topic_0228752402_zh-cn_topic_0228757086_fig69531305324"></a>  
+    ![](figures/Presenter-Server进程启动.png "Presenter-Server进程启动")
 
-    使用上图提示的URL登录Presenter Server，仅支持Chrome浏览器。IP地址为[步骤2](#zh-cn_topic_0228757086_li9634105881418)中输入的IP地址，端口号默为7007，如下图所示，表示Presenter Server启动成功。
+    使用上图提示的URL登录Presenter Server。IP地址为[步骤2](#zh-cn_topic_0228752402_zh-cn_topic_0228757086_li9634105881418)中输入的IP地址，端口号默为7007，如下图所示，表示Presenter Server启动成功。
 
-    **图 2**  主页显示<a name="zh-cn_topic_0228757086_fig64391558352"></a>  
-    ![](figures/主页显示-52.png "主页显示-52")
+    **图 2**  主页显示<a name="zh-cn_topic_0228752402_zh-cn_topic_0228757086_fig64391558352"></a>  
+    ![](figures/主页显示.png "主页显示")
 
     Presenter Server、Mind Studio与Atlas 200 DK之间通信使用的IP地址示例如下图所示：
 
-    **图 3**  IP地址示例<a name="zh-cn_topic_0228757086_fig1881532172010"></a>  
-    ![](figures/IP地址示例-53.png "IP地址示例-53")
+    **图 3**  IP地址示例<a name="zh-cn_topic_0228752402_zh-cn_topic_0228757086_fig1881532172010"></a>  
+    ![](figures/IP地址示例.png "IP地址示例")
 
     其中：
 
@@ -100,7 +101,7 @@
     -   如果仅解析RTSP视频流，本步骤可跳过。
 
 
-## 运行<a name="zh-cn_topic_0220049620_section6245151616426"></a>
+## 运行<a name="zh-cn_topic_0228752402_zh-cn_topic_0220049620_section6245151616426"></a>
 
 1.  在Mind Studio所在Ubuntu服务器中，以HwHiAiUser用户SSH登录到Host侧。
 
@@ -114,7 +115,7 @@
 
     **python main.py** _channel_
 
-    -   _channel:_ 输入的视频文件名或者RTSP流地址
+    -   _channel: _输入的视频文件名或者RTSP流地址
 
     视频文件运行的命令示例如下所示：
 
@@ -129,10 +130,10 @@
 
 4.  使用启动Presenter Server服务时提示的URL登录 Presenter Server 网站。
 
-    等待Presenter Agent传输数据给服务端，单击“Refresh“刷新，当有数据时相应的Channel 的Status变成绿色，如[图 Presenter Server界面](#zh-cn_topic_0228757087_fig113691556202312)所示。
+    等待Presenter Agent传输数据给服务端，单击“Refresh“刷新，当有数据时相应的Channel 的Status变成绿色，如[图 Presenter Server界面](#zh-cn_topic_0228752402_zh-cn_topic_0228757087_fig113691556202312)所示。
 
-    **图 4**  Presenter Server界面<a name="zh-cn_topic_0228757087_fig113691556202312"></a>  
-    ![](figures/Presenter-Server界面-54.png "Presenter-Server界面-54")
+    **图 4**  Presenter Server界面<a name="zh-cn_topic_0228752402_zh-cn_topic_0228757087_fig113691556202312"></a>  
+    ![](figures/Presenter-Server界面.png "Presenter-Server界面")
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
     >-   Presenter Server最多支持10路Channel同时显示，每个  _presenter\_view\_app\_name_  对应一路Channel。  
