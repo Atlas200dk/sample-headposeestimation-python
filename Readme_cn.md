@@ -26,6 +26,7 @@
 2.  <a name="zh-cn_topic_0228752402_li3208251440"></a>常规部署，请参考：  [https://github.com/Atlas200dk/sample-README/tree/master/sample-headposeestimation-python](https://github.com/Atlas200dk/sample-README/tree/master/sample-headposeestimation-python)  。
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
+    >
     >-   该部署方式，需要手动完成代码下载、模型转换、环境变量配置等过程。完成后，会对其中的过程更加了解。  
 
 
@@ -63,11 +64,11 @@
 
     执行如下命令在后台启动Head Poseestimation应用的Presenter Server主程序。
 
-    **bash start\_presenterserver.sh**
+    **bash start_present_server.sh**
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
     >-   执行此脚本会先杀死后台的其他Presenter Server进程。后台无正在执行的进程会提示presenter server not in process；后台有正在执行的进程会提示presenter server stop success。  
-    >-   程序运行结束后可执行  **bash stop\_presenterserver.sh**  关闭presentserver。  
+    >-   程序运行结束后可执行  **bash stop_present_server.sh**  关闭presentserver。  
 
     如[图 Presenter Server进程启动](#zh-cn_topic_0228752402_zh-cn_topic_0228757086_fig69531305324)所示，表示presenter\_server的服务启动成功。
 
@@ -109,7 +110,7 @@
 
 2.  在HwHiAiUser用户下进入应用代码所在目录。
 
-    **cd \~/HIAI\_PROJECTS/sample-crowdcounting-python**
+    **cd \~/HIAI\_PROJECTS/headposeestimationapp**
 
 3.  执行应用程序。
 

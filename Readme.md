@@ -26,6 +26,7 @@ You can use either of the following methods:
 2.  <a name="en-us_topic_0228752402_li3208251440"></a>Common deployment: visit  [https://github.com/Atlas200dk/sample-README/tree/master/sample-headposeestimation-python](https://github.com/Atlas200dk/sample-README/tree/master/sample-headposeestimation-python).
 
     >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >
     >-   In this deployment mode, you need to manually download code, convert models, and configure environment variables. After that, you will have a better understanding of the process.  
 
 
@@ -63,11 +64,11 @@ Note: If the HiAI library, OpenCV library, and related dependencies have been in
 
     Run the following command to start the Presenter Server program of the head pose estimation application in the background:
 
-    **bash start\_presenterserver.sh**
+    **bash start\_presenter_server.sh**
 
     >![](public_sys-resources/icon-note.gif) **NOTE:**   
     >-   Running this script will kill other Presenter Server processes on the server. If no process is running on the background, the message "presenter server not in process" is displayed. If a process is running in the background, the message "presenter server stop success" is displayed.  
-    >-   After the application is stopped, you can run the  **bash stop\_presenterserver.sh**  command to stop Presenter Server.  
+    >-   After the application is stopped, you can run the  **bash stop_present_server.sh**  command to stop Presenter Server.  
 
     If the information shown in  [Figure 1](#en-us_topic_0228752402_en-us_topic_0228757086_fig69531305324)  is displayed, the Presenter Server service has been started successfully.
 
@@ -109,7 +110,7 @@ Note: If the HiAI library, OpenCV library, and related dependencies have been in
 
 2.  Go to the directory where the application code is stored as the  **HwHiAiUser**  user.
 
-    **cd \~/HIAI\_PROJECTS/sample-crowdcounting-python**
+    **cd \~/HIAI\_PROJECTS/headposeestimationapp**
 
 3.  Run the application.
 
